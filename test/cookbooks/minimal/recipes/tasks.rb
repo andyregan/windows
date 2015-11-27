@@ -58,6 +58,7 @@ end
 
 windows_task 'task_for_system' do
   command 'dir'
-  user 'system'
-  password 'ignored'
+  user 'vagrant'
+  password 'vagrant'
+  cwd ENV['TEMP']
 end
